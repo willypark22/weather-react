@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 const api = {
   key: "3ae85c1c464adaa4838817f2916dbc89",
   base: "https://api.openweathermap.org/data/2.5/"
@@ -15,7 +16,7 @@ function App() {
         .then(result => {
           setWeather(result);
           setQuery('');
-        });
+      });
     }
   }
 
